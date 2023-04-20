@@ -5,20 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
+    <!--  header  -->
+    <header>
+        <h1>TO DO LIST </h1>
+    </header>
     <!--container-->
     <div class="container">
       <!--title-->
       <div class="title">
-        To-DO-List
+        Type your tasks
         <img src="" alt="" />
       </div>
       <!-- list-bar -->
       <div class="todo-list-bar">
-        <input type="text" id="task" placeholder="..." autocomplete="off" />
-        <button onclick="clicked()" class="addBtn">Add</button>
-        <button id="delete-Btn">Delete</button>
+        <div class="todo-list-bar_input">
+            <input type="text" id="task" placeholder="..." autocomplete="off" />
+
+        </div>
+        <div class="todo-list-bar_btn">
+            <button onclick="clicked()" class="addBtn">Add</button>
+            <button id="delete-Btn">Delete</button>
+        </div>
+    
       </div>
       <!--lists-->
       <ul class="lists"></ul>
